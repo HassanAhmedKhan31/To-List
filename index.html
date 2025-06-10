@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Multi To‑Do Lists</title>
+</head>
+<body data-theme="light">
+  <div class="container">
+    <header>
+      <h1>📋 My To‑Do Lists</h1>
+      <button id="toggleTheme">Toggle Dark/Light</button>
+    </header>
+
+    <div class="list-controls">
+      <select id="listSelector"></select>
+      <button id="renameList">Rename List</button>
+      <button id="deleteList">Delete List</button>
+      <input type="text" id="newListName" placeholder="New List Name" />
+      <button id="createList">Create List</button>
+    </div>
+
+    <div class="todo-controls">
+      <input type="text" id="todoText" placeholder="Enter a task..." />
+      <button id="addTodo">Add Todo</button>
+      <button id="deleteAll">Delete All</button>
+    </div>
+
+    <ul id="list"></ul>
+
+    <div class="data-controls">
+      <button id="exportData">Export All Data</button>
+      <input type="file" id="importFile" accept="application/json" />
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
